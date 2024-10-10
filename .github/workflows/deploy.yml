@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: jsmrcaga/action-netlify-deploy@v2.1.0
-      with:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.MY_AUTH_TOKEN}}
-        SITE_ID: ${{ secrets.MY_SITE_ID}}
-        NETLIFY_DEPLOY_TO_PROD: true
-        build_directory: dist/hello-ci-cd/browser
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.MY_AUTH_TOKEN }}
+          SITE_ID: ${{ secrets.MY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: true
+          build_directory: dist/hello-ci-cd/browser
